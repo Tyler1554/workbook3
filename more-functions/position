@@ -1,0 +1,3 @@
+let name = "Tyler Rugh"
+let position = name.indexOf("T");
+console.log(position);

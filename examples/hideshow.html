@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hide show</title>
+  </head>
+  <body>
+    <main>
+      <h3 id="titleHeading">title</h3>
+      <p id="detailsParagraph" style="display: none">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ipsa autem illo atque aliquam laboriosam
+        adipisci eligendi, fugit quos repellendus hic reprehenderit, quo tenetur accusantium est incidunt veritatis?
+        Nostrum, impedit.
+      </p>
+    </main>
+    <script>
+      const titleHeading = document.getElementById("titleHeading");
+      const detailsParagraph = document.getElementById("detailsParagraph");
+
+      function toggleparagraph() {
+        let display = detailsParagraph.style.display;
+        if (display == "none") {
+          detailsParagraph.style.display = "block";
+        } else {
+          detailsParagraph.style.display = "none";
+        }
+      }
+     
+      titleHeading.onclick = toggleparagraph;
+    </script>
+  </body>
+</html>
